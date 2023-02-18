@@ -1,0 +1,283 @@
+.header {
+    padding: 0.9% 17.5% 0.84%;
+}
+  
+.main {
+    width: 100%;
+    height: 100%;
+    padding: 0 17.5%;
+}
+  
+.main-container {
+    width: 100%;
+    height: 100%;
+    padding: 3% 7% 0;
+}
+  
+.header_search input {
+    background-image: url(../img/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 30% center;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    width: 100%;
+    height: 29px;
+}
+  
+.header_search {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background: #fafafa;
+    width: 216px;
+}
+  
+.header_search:hover {
+    border: 1px solid black;
+}
+  
+input[type="search"]:focus {
+    outline: none;
+    background: none;
+}
+  
+.header_social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+  
+.header_social-media a {
+    text-decoration-line: none;
+}
+  
+.header_social-media a:hover {
+    transform: scale(1.1);
+}
+  
+.information_photo {
+    width: 154px;
+    height: 153px;
+}
+
+.row > * {
+    padding: 0% !important;
+}
+  
+.information_general_person {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+}
+  
+.btn-follow {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    width: 97px;
+    height: 29px;
+}
+  
+.btn-follow:focus {
+    background-color: rgb(49, 110, 49);
+}
+  
+.btn-down {
+    width: 33px;
+    height: 29px;
+    position: absolute;
+}
+  
+.dropdown {
+    height: 29px;
+    position: relative;
+}
+  
+.dropdown-toggle:empty::after {
+    margin-left: 0;
+    margin-bottom: 3.5px;
+}
+  
+.information_general {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+  
+.information_general_person {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+  
+.information_general_person span {
+    margin-right: 18px;
+}
+  
+.information_general_person i {
+    margin-left: 43px;
+}
+  
+.information_general_follower {
+    gap: 35px;
+}
+  
+.information_general_link {
+    flex-direction: column;
+    justify-content: start;
+}
+  
+.information_general_link p {
+    margin-bottom: 0 !important;
+}
+  
+.information_general_link a {
+    color: #133768;
+    text-decoration-line: none;
+}
+  
+.stories {
+    gap: 5%;
+    margin-top: 7%;
+}
+  
+.stories1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.stories1:hover {
+    transform: scale(1.1);
+}
+  
+.stories1 span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+  
+.all-photos {
+    margin-top: 5.9%;
+}
+  
+.all-photos_type {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    gap: 8%;
+}
+  
+.all-photos_type--choose {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8f8f8f;
+    cursor: pointer;
+    position: relative;
+}
+  
+.all-photos_type--choose span:hover {
+    color: black;
+}
+  
+.all-photos_photos--grid img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 2.5%;
+}
+  
+.all-photos_photos--grid {
+    gap: 2.4%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1060px) {
+    .information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .information_general {
+      margin-left: 0;
+    }
+  
+    .information_general_follower {
+      justify-content: center;
+    }
+  
+    .information_general_person {
+      justify-content: center;
+    }
+  
+    .stories {
+      justify-content: center;
+    }
+}
+  
+@media screen and (max-width: 800px) {
+    .header {
+      justify-content: start !important;
+      gap: 25px;
+    }
+  
+    .header_search {
+      width: 156px;
+    }
+  
+    .header_search input {
+      background-position: left 20% center;
+    }
+  
+    .header_social-media {
+      flex-direction: column;
+      position: absolute;
+      right: 90px;
+      top: 9px;
+    }
+}
+  
+@media screen and (max-width: 500px) {
+    .header_search {
+      display: none;
+    }
+  
+    .header {
+      justify-content: flex-start !important;
+    }
+  
+    .header_social-media {
+      flex-direction: row;
+      position: absolute;
+      right: 30px;
+      top: 9px;
+      gap: 8px;
+    }
+  
+    .information_general_link {
+      left: -20px;
+      position: relative;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .information_general_link {
+      left: -40px;
+    }
+}
+  
+@media screen and (max-width: 350px) {
+    .header_social-media {
+      flex-direction: column;
+      position: absolute;
+      right: 30px;
+      top: 9px;
+      gap: 8px;
+    }
+}
