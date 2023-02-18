@@ -1,0 +1,195 @@
+body{
+    background-color: rgb(235, 222, 214);
+}
+
+.box {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.actions {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.knife-first, .knife-cross1, .knife-cross2 {
+    width: 350px;
+    height: 20px;
+    border-radius: 50px;
+    transition: transform 0.9s;
+}
+
+.knife-first {
+    border: 2px solid rgb(83, 255, 83);
+    background-color: rgb(156, 156, 156);
+    box-shadow: 0px 0px 20px rgb(76, 253, 76);
+    margin-bottom: 150px;
+}
+
+.actions:hover > .knife-first {
+    transform: translateY(25px);
+}
+.knife-cross1 {
+    border: 2px solid rgb(25, 84, 247);
+    background-color:  rgb(156, 156, 156);
+    box-shadow: 0px 0px 20px rgb(75, 123, 255);
+}
+
+.actions:hover > .knife-cross1 {
+    transform: rotate(30deg);
+}
+
+.knife-cross2 {
+    border: 2px solid rgb(255, 41, 41);
+    background-color:  rgb(156, 156, 156);
+    box-shadow: 0px 0px 20px rgb(255, 72, 0);
+}
+
+.actions:hover > .knife-cross2 {
+    transform: rotate(-30deg);
+}
+
+#second_section{
+    min-width: 100%;
+    width: 100%;
+    min-width: 1000px;
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ball{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(0, 221, 111);
+} 
+
+.first{
+    animation: first-ball 8s 0s infinite;
+    background-color: rgb(0, 110, 114);
+}
+
+@keyframes first-ball {
+    0%{
+        rotate: 0deg;
+        transform-origin: top;
+    }
+    15%{
+        rotate: 90deg;
+        transform-origin: top;
+    } 
+    30%{
+        rotate: 0deg;
+        transform-origin: top;
+    }
+}
+ 
+.second{
+    animation: second-ball 8s 1s infinite;
+}
+ 
+@keyframes second-ball {
+   35%{
+        background-color: rgb(0, 110, 114);
+    }
+    80%{
+        background-color: rgb(0, 110, 114);
+    }
+    95%{
+        background-color: rgb(0, 221, 111);
+    }
+}
+ 
+.third{
+    animation: third-ball 8s 1.5s infinite;
+}
+ 
+@keyframes third-ball {
+    20%{
+        background-color: rgb(0, 110, 114);
+    }
+    65%{
+        background-color: rgb(0, 110, 114);
+    }
+    85%{
+        background-color: rgb(0, 221, 111);
+    }
+}
+
+.fourth{
+    animation: fourth-ball 8s 2s infinite;
+}
+ 
+@keyframes fourth-ball {
+    20%{
+        background-color: rgb(0, 110, 114);
+    }
+    55%{
+        background-color: rgb(0, 110, 114);
+    }
+    60%{
+        background-color: rgb(0, 221, 111);
+    }
+}
+ 
+.fifth{
+    animation: fifth-ball 8s 2.5s infinite;
+}
+ 
+@keyframes fifth-ball {
+    20%{
+        background-color: rgb(0, 110, 114);
+    }
+    40%{
+        background-color: rgb(0, 110, 114);
+    }
+    50%{
+        background-color: rgb(0, 221, 111);
+    }
+}
+ 
+.sixth{
+    animation: sixth-ball 8s 3s infinite;
+}
+ 
+@keyframes sixth-ball {
+    20%{
+        background-color: rgb(0, 110, 114);
+    }
+    25%{
+        background-color: rgb(0, 110, 114);
+    }
+    50%{
+        background-color: rgb(0, 221, 111);
+    }
+}
+
+.seventh{
+    animation: seventh-ball 8s 3.5s infinite;
+    background-color: rgb(0, 221, 111);
+}
+
+@keyframes seventh-ball {
+    0%{
+        rotate: 0deg;
+        transform-origin: top;
+    }
+    15%{
+        rotate: -90deg;
+        transform-origin: top;
+    } 
+    30%{
+        rotate: 0deg;
+        transform-origin: top;
+    }
+}
